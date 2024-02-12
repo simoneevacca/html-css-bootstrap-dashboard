@@ -20,9 +20,26 @@ main {
     height: 100px;
    } 
    > .content {
-    & 	div[class^="col"] {
-        height: 1000px;
-        background-color: red;
+   
+    & .table {
+        display: block;
+        height: 400px;
+        background-color: bisque;
+    }
+    & .faq {
+        display: block;
+        height: 200px;
+        background-color: bisque;
+    }
+    & .todo {
+        display: block;
+        height: 200px;
+        background-color: bisque;
+    }
+    & .graphic {
+        display: block;
+        height: 500px;
+        background-color: bisque;
     }
    }
 }
