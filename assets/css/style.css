@@ -1,0 +1,28 @@
+*{
+    border: 1px dashed black;
+}
+header {
+    height: 50px;
+    background-color: azure;
+}
+.page {
+    height: 100%;
+}
+nav {
+    width: 150px;
+    
+    background-color: blue;
+   
+}
+main {
+   > .boolean {
+    background-color: aqua;
+    height: 100px;
+   } 
+   > .content {
+    & 	div[class^="col"] {
+        height: 1000px;
+        background-color: red;
+    }
+   }
+}
