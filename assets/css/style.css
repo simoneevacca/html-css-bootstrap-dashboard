@@ -86,9 +86,12 @@ main {
 
     >.content {
         
+        & .title-card{
 
-        & .table {
             background-color: var(--bg-title-card);
+            
+        }
+        & .table {
             & img {
                 height: 30px;
                 padding-right: 1rem;
@@ -113,7 +116,7 @@ main {
 
         & .faq {
             
-            height: 200px;
+            
             background-color: bisque;
             
         }
