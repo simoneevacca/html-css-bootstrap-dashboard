@@ -1,11 +1,10 @@
-* {
-    /* border: 1px dashed black; */
-}
+
 
 :root {
     --header_bg: #f8f9fa;
     --searchbar_bg: #e5e5e5;
     --nav-bg: #051e34;
+    --bg-title-card: #f7f7f7;
 }
 
 a {
@@ -86,27 +85,37 @@ main {
     }
 
     >.content {
+        
 
         & .table {
-            display: block;
-            height: 400px;
-            background-color: bisque;
+            background-color: var(--bg-title-card);
+            & img {
+                height: 30px;
+                padding-right: 1rem;
+            }
+
+        & .icon {
+            height: 2rem;
+            width: 2rem;
+            border: 2px solid lightgrey;
+            border-radius: 5px;
+        } 
+
         }
 
         & .faq {
-            display: block;
+            
             height: 200px;
             background-color: bisque;
+            
         }
 
         & .todo {
-            display: block;
             height: 200px;
             background-color: bisque;
         }
 
         & .graphic {
-            display: block;
             height: 500px;
             background-color: bisque;
         }
