@@ -1,58 +1,90 @@
-*{
-    border: 1px dashed black;
+* {
+    /* border: 1px dashed black; */
 }
+
 :root {
-    --header_bg: #e8e9ea;
+    --header_bg: #f8f9fa;
+    --searchbar_bg: #e5e5e5;
 }
 
 header {
     height: 50px;
     background-color: var(--header_bg);
+
     & img {
         height: 100%;
     }
-    & .logo-big {
+
+    >.logo-big {
         display: none;
+        padding: 0 2rem 0 1rem;
+    }
+
+    & .input-group {
+        height: 100%;
+
+        >.input-group-text {
+            background-color: var(--searchbar_bg);
+        }
+
+        >.form-control {
+            height: 100%;
+            background-color: var(--searchbar_bg);
+        }
+    }
+
+    >.header-icon {
+        background-color: white;
+
+        > .desktop-view {
+            display: none;
+        }
     }
 }
 
 .page {
     height: 100%;
 }
+
 nav {
     width: 150px;
-    
+
     background-color: blue;
-   
+
 }
+
 main {
-   > .boolean {
-    background-color: aqua;
-    height: 100px;
-   } 
-   > .content {
-   
-    & .table {
-        display: block;
-        height: 400px;
-        background-color: bisque;
+    >.boolean {
+        background-color: aqua;
+        height: 100px;
     }
-    & .faq {
-        display: block;
-        height: 200px;
-        background-color: bisque;
+
+    >.content {
+
+        & .table {
+            display: block;
+            height: 400px;
+            background-color: bisque;
+        }
+
+        & .faq {
+            display: block;
+            height: 200px;
+            background-color: bisque;
+        }
+
+        & .todo {
+            display: block;
+            height: 200px;
+            background-color: bisque;
+        }
+
+        & .graphic {
+            display: block;
+            height: 500px;
+            background-color: bisque;
+        }
     }
-    & .todo {
-        display: block;
-        height: 200px;
-        background-color: bisque;
-    }
-    & .graphic {
-        display: block;
-        height: 500px;
-        background-color: bisque;
-    }
-   }
 }
 
 @media screen and (min-width: 992px) {
@@ -60,6 +92,10 @@ main {
         display: block;
         background-color: white;
     }
+    #site_header .desktop-view {
+        display: block;
+    }
+
     .logo-small {
         display: none;
     }

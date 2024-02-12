@@ -15,12 +15,25 @@
 
 <body>
 
-    <header id="site_header" class="d-flex">
-        <div class="logo-big">
+    <header id="site_header" class="d-flex py-2">
+        <div class="logo-big ">
             <img src="./assets/img/logo.svg" alt="">
         </div>
         <div class="logo-small">
             <img src="./assets/img/mobile-logo.png" alt="">
+        </div>
+        <div class="search flex-grow-1">
+            <div class="input-group">
+                <div class="input-group-text"><i class="fas fa-search"></i></i></div>
+                <input type="text" class="form-control" id="formGroupExampleInput2"
+                    placeholder="Prova a cercarte: Lezioni di Laravel">
+            </div>
+        </div>
+        <div class="header-icon d-flex align-items-center">
+            <i class="desktop-view fa-solid fa-bars mx-3"></i>
+            <i class="desktop-view fa-solid fa-circle-question mx-3"></i>
+            <i class="desktop-view fa-solid fa-ellipsis-vertical mx-3"></i>
+            <i class="fa-solid fa-bell mx-3 text-warning"></i>
         </div>
     </header>
     <!-- /#site_header -->
@@ -47,12 +60,12 @@
                             <!-- /.table -->
 
                             <card class="faq">
-                                
+
                             </card>
                             <!-- /.faq -->
                         </div>
                         <div class="col-12 col-lg-4">
-                            
+
                             <card class="todo">
 
                             </card>
