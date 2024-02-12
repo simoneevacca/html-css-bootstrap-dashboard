@@ -66,11 +66,21 @@ nav {
 
 main {
     > .boolean {
+        flex-direction: column;
+
       & .desktop-view {
         display: none;
       }
       & .mobile-view {
         display: inline-block;
+      }
+      > .new {
+        & .add {
+            font-size: 3rem;
+            width: 3rem;
+            height: 3rem;
+            border: 1px solid white;
+        }
       }
         
     }
@@ -125,4 +135,10 @@ main {
     #site_main .mobile-view {
         display: none;
     }
+}
+
+@media screen and (min-width: 768px) {
+#site_main .boolean {
+    flex-direction: row;
+}
 }
