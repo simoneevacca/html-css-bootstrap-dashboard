@@ -93,13 +93,21 @@ main {
                 height: 30px;
                 padding-right: 1rem;
             }
+            
+            & .icon {
+                height: 2rem;
+                width: 2rem;
+                border: 2px solid lightgrey;
+                border-radius: 5px;
+            } 
 
-        & .icon {
-            height: 2rem;
-            width: 2rem;
-            border: 2px solid lightgrey;
-            border-radius: 5px;
-        } 
+            & .n-class {
+                width: 50%;
+            }
+
+            & .tablet-view {
+                display: none;
+            }
 
         }
 
@@ -149,5 +157,10 @@ main {
 @media screen and (min-width: 768px) {
 #site_main .boolean {
     flex-direction: row;
+}
+#site_main .tablet-view{
+    display: inline-block;
+    border: none;
+
 }
 }
