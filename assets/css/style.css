@@ -5,9 +5,10 @@
     --searchbar_bg: #e5e5e5;
     --nav-bg: #051e34;
     --bg-title-card: #f7f7f7;
+    --bg-page: #f8f9fa;
 }
 
-a {
+a:not(.report){
     text-decoration: none;
 }
 .bg_important {
@@ -85,6 +86,7 @@ main {
     }
 
     >.content {
+        background-color: var(--bg-page);
         
         & .title-card{
 
@@ -121,8 +123,9 @@ main {
         }
 
         & .graphic {
-            height: 500px;
-            background-color: bisque;
+            & img {
+                width: 100%;
+            }
         }
     }
 }
