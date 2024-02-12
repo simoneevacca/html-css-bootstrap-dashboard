@@ -5,6 +5,11 @@
 :root {
     --header_bg: #f8f9fa;
     --searchbar_bg: #e5e5e5;
+    --nav-bg: #051e34;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -33,10 +38,10 @@ header {
         }
     }
 
-    >.header-icon {
+    > .header-icon {
         background-color: white;
 
-        > .desktop-view {
+        & .desktop-view {
             display: none;
         }
     }
@@ -47,9 +52,11 @@ header {
 }
 
 nav {
-    width: 150px;
-
-    background-color: blue;
+    background-color: var(--nav-bg);
+    background-image: url(../img//sidebar-bg.png);
+    & .desktop-view {
+        display: none;
+    }
 
 }
 
@@ -98,5 +105,8 @@ main {
 
     .logo-small {
         display: none;
+    }
+    #site_nav .desktop-view {
+        display: block;
     }
 }
