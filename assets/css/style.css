@@ -11,6 +11,9 @@
 a {
     text-decoration: none;
 }
+.bg_important {
+    background-color: #165bba;
+}
 
 header {
     height: 50px;
@@ -59,11 +62,17 @@ nav {
     }
 
 }
+ 
 
 main {
-    >.boolean {
-        background-color: aqua;
-        height: 100px;
+    > .boolean {
+      & .desktop-view {
+        display: none;
+      }
+      & .mobile-view {
+        display: inline-block;
+      }
+        
     }
 
     >.content {
@@ -108,5 +117,12 @@ main {
     }
     #site_nav .desktop-view {
         display: block;
+    }
+
+    #site_main .desktop-view {
+        display: inline-block;
+    }
+    #site_main .mobile-view {
+        display: none;
     }
 }
