@@ -114,16 +114,10 @@ main {
 
         }
 
-        & .faq {
-            
-            
-            background-color: bisque;
-            
-        }
-
         & .todo {
-            height: 200px;
-            background-color: bisque;
+            & .form-check {
+                padding-left: 2.5rem;
+            }
         }
 
         & .graphic {
