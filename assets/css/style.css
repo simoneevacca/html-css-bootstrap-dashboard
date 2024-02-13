@@ -104,12 +104,20 @@ main {
         }
 
         >.new {
+            order: 1;
             & .add {
                 font-size: 1.5rem;
                 width: 3rem;
                 height: 3rem;
                 border: 1px solid white;
             }
+        }
+        >.app {
+            order: 2;
+        }
+
+        >.students {
+            order: 3;
         }
 
         & .offcanvas {
@@ -226,4 +234,11 @@ main {
     #site_main .offcanvas {
         width: 50%;
     }
+
+    #site_main {
+        & .students,.app,.new {
+            order: 1;
+        }
+    }
+
 }
