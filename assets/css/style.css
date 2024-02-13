@@ -82,6 +82,12 @@ main {
             border: 1px solid white;
         }
       }
+      & .offcanvas {
+        width: 100%;
+        & * {
+            font-weight: 500;
+        }
+      }
         
     }
 
@@ -157,6 +163,8 @@ main {
 #site_main .tablet-view{
     display: inline-block;
     border: none;
-
+}
+ #site_main .offcanvas {
+    width: 50%;
 }
 }

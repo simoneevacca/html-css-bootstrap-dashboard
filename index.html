@@ -87,9 +87,76 @@
 
                 <div class="new text-white d-flex gap-4 align-items-center">
                     <div class="">Nuovo Studente</div>
-                    <div class="add d-flex align-items-center justify-content-center rounded"><a
-                            class="text-white d-inline" href="#"><i class="fa-solid fa-plus"></i></a></div>
-                </div>
+                    <button class="btn btn-primary border" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                            class="fa-solid fa-plus"></i></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form class="row g-3">
+                                <div class="col-6">
+                                    <label for="inputName" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputSubname" class="form-label">Cognome</label>
+                                    <input type="text" class="form-control" placeholder="" aria-label="Last name">
+                                </div>
+                                
+                                <div class="col-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputPassword4" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Indirizzo</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputCity" class="form-label">Città</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-4">
+                                    <label for="inputState" class="form-label">Stato</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Scegli</option>
+                                        <option value="">uomo</option>
+                                        <option value="">uomo</option>
+                                    </select>
+                                </div>
+                                <div class="col-2">
+                                    <label for="inputCAP" class="form-label">CAP</label>
+                                    <input type="text" class="form-control" id="inputCAP">
+                                </div>
+                                <div>Foto</div>
+                                <div class="input-group col-12">
+                                    <input type="file" class="form-control" id="inputGroupFile03"
+                                        aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Seleziona per proseguire
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Invia</button>
+                                    <button type="submit" class="btn btn-warning">Svuota</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
             </section>
 
             <section class="content">
@@ -293,18 +360,23 @@
                                 </div>
                                 <ul class="list-group p-3">
                                     <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                      <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="firstCheckbox">
+                                        <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
                                     </li>
                                     <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                      <label class="form-check-label" for="secondCheckbox">Lezione su bootstrap 5 i9n classe #75</label>
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="secondCheckbox">
+                                        <label class="form-check-label" for="secondCheckbox">Lezione su bootstrap 5 i9n
+                                            classe #75</label>
                                     </li>
                                     <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                                      <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="thirdCheckbox">
+                                        <label class="form-check-label" for="thirdCheckbox">Controllare username github
+                                            studenti</label>
                                     </li>
-                                  </ul>
+                                </ul>
                             </div>
 
                             <div class="card graphic mt-3">
@@ -312,11 +384,13 @@
                                     <img src="./assets/img/stats.jpeg" alt="">
                                     <div class="text">
                                         <h4 class="px-3">Utenti attivi</h4>
-                                        <p class=" px-3 m-0 pb-3 border-bottom">lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                        <p class=" px-3 m-0 pb-3 border-bottom">lista degli utenti attivi in piattaforma
+                                            nell'ultimo mese</p>
                                         <div class="py-2 px-3 border-bottom">Gennaio: 1200</div>
                                         <div class="py-2 px-3 border-bottom">Febbraio: 800</div>
                                         <div class="py-2 px-3 border-bottom">Marzo: 1500</div>
-                                        <div class=" p-3"><a class="report" href="#">Visualizza report approfondito</a></div>
+                                        <div class=" p-3"><a class="report" href="#">Visualizza report approfondito</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
