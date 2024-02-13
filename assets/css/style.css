@@ -60,6 +60,20 @@ nav {
     & .desktop-view {
         display: none;
     }
+    & .nav-top > div {
+        background-color: none;
+        transition: 0.5s;
+    }
+    & .nav-top > div:hover {
+        background-color: grey;
+    }
+    & .nav-bottom > div {
+        background-color: none;
+        transition: 0.5s;
+    }
+    & .nav-bottom > div:hover {
+        background-color: grey;
+    }
 
 }
  
@@ -118,6 +132,20 @@ main {
 
             & .tablet-view {
                 display: none;
+            }
+            & tr {
+                background-color: none;
+                transition: 0.5s;
+            }
+            & td {
+                background-color: none;
+                transition: 0.5s;
+            }
+            & tr:hover > td{
+                background-color: lightgrey;
+            }
+            & tr:hover{
+                background-color: lightgrey;
             }
 
         }
