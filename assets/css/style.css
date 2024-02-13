@@ -182,6 +182,10 @@ main {
                 background-color: lightgrey;
             }
 
+            td:first-child {
+                padding-left: 1rem;
+            }
+          
         }
 
 
