@@ -48,6 +48,15 @@ header {
             display: none;
         }
     }
+
+    & .drop-down-menu {
+        display: none;
+        width: 150px;
+    }
+
+    .bell:hover .drop-down-menu{
+        display: block;
+    }
 }
 
 .page {
