@@ -76,7 +76,7 @@ main {
       }
       > .new {
         & .add {
-            font-size: 3rem;
+            font-size: 1.5rem;
             width: 3rem;
             height: 3rem;
             border: 1px solid white;
@@ -116,11 +116,7 @@ main {
 
         }
 
-        & .todo {
-            & .form-check {
-                padding-left: 2.5rem;
-            }
-        }
+       
 
         & .graphic {
             & img {
