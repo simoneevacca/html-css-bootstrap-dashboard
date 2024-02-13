@@ -120,6 +120,10 @@ main {
             }
         }
 
+        & button:hover {
+            color: black;
+            background-color: white;
+        }
     }
 
     >.content {
