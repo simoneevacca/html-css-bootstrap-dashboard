@@ -33,16 +33,16 @@
             <a href="#"><i class="desktop-view fa-solid fa-bars mx-3 text-black"></i></a>
             <a href="#"><i class="desktop-view fa-solid fa-circle-question mx-3 text-black"></i></a>
             <a href="#"><i class="desktop-view fa-solid fa-ellipsis-vertical mx-3 text-black"></i></a>
-            <div class="bell position-relative">
-                <a href="#"><i class="fa-solid fa-bell mx-3 text-warning"></i></a>
-                <div class="drop-down-menu position-absolute end-50">
-                    <ul class="list-group bg-white  border rounded p-1">
-                        <li class="list-group-item border-0"><a class="text-black" href="#">Profilo</a></li>
-                        <li class="list-group-item border-0"><a class="text-black" href="#">Fatturazione</a></li>
-                        <li class="list-group-item border-0"><a class="text-black" href="#">Logout</a></li>
-                    </ul>
+            <div class="btn-group">
+                <div data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    <a href="#"><i class="fa-solid fa-bell mx-3 text-warning"></i></a>
                 </div>
-            </div>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><button class="dropdown-item" type="button">Profilo</button></li>
+                  <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                  <li><button class="dropdown-item" type="button">Logout</button></li>
+                </ul>
+              </div>
 
         </div>
     </header>
