@@ -163,11 +163,13 @@ main {
             & tr {
                 background-color: none;
                 transition: 0.5s;
+                
             }
 
             & td {
                 background-color: none;
                 transition: 0.5s;
+                
             }
 
             & tr:hover>td {
